@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+# load image
 img = cv2.imread("yumushan.jpg")
 x = img.shape[1]
 y = img.shape[0]
@@ -12,7 +13,7 @@ img = cv2.resize(img, (new_x, new_y))
 
 hls_img = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
 
-# trackbar window boyutu ayarlama
+# trackbar window size
 cv2.namedWindow("HLS Trackbar")
 cv2.resizeWindow("HLS Trackbar", 200, 10)
 
