@@ -31,7 +31,6 @@ cv2.imshow("Image", img)
 # Assign a pointer to track mouse events
 cv2.setMouseCallback("Image", click)
 
-# ESC tuşuna basılana kadar döngüyü devam ettir
 while True:
     if cv2.waitKey(1) == 27:
         break
